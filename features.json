@@ -33,7 +33,7 @@
       "type": "Feature",
       "properties": {
         "title": "WWU Münster",
-        "description": "Universität Münster<br/>Schlossplatz 2 48149 Münster"
+        "description": "Universität Münster<br/>Schlossplatz 2, 48149 Münster"
       },
       "geometry": {
         "type": "Point",
