@@ -1,0 +1,45 @@
+<html>
+<head>
+  <title>Summer School</title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <style type="text/css">
+    body { margin: 0; }
+    #map { width: 100%; height: 100%; }
+    .popup .title { font-size: 1.5em; font-weight: bold; }
+    .popup .description { margin: 18px 0; }
+  </style>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      function popupContent(p) {
+        return '<div class="popup">' +
+                 '<div class="title">' + p.title +  '</div>' +
+                 '<div class="description">' + p.description +  '</div>' +
+               '</div>';
+      }
+      function basemap() {
+        var url = 'http://otile{s}.mqcdn.com/tiles/1.0.0/map/{z}/{x}/{y}.jpg';
+        var attr = 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors ' +
+                   '| Tiles Courtesy of <a href="http://www.mapquest.com/">MapQuest</a>';
+        return  L.tileLayer(url, {subdomains: "1234", maxZoom: 18, attribution: attr});
+      }
+      var map = L.map('map').addLayer(basemap());
+      $.getJSON('//autermann.github.io/summerschool/features.json')
+        .then(function(fc) {
+          return L.geoJson(fc.features, {
+            onEachFeature: function(f, l) {
+              l.bindPopup(popupContent(f.properties));
+            }
+          });
+        })
+        .done(function(l) {
+          map.addLayer(l).fitBounds(l.getBounds(), {padding: L.point(25, 25)});
+        });
+    });
+  </script>
+</head>
+<body>
+  <div id="map"></div>
+</body>
+</html>

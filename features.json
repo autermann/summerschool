@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Johanniter-Gästehaus",
+        "description": "Unterkunft der Teilnehmer/innen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.619818,
+          51.941558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Alexander­von­Humboldt Haus",
+        "description": "Veranstaltungsort"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.604929,
+          51.960112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "WWU Münster",
+        "description": "Schlossplatz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.613225,
+          51.963737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Institut für Erziehungswissenschaft",
+        "description": "WWU Münster"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.620417,
+          51.960025
+        ]
+      }
+    }
+  ]
+}
