@@ -56,6 +56,20 @@
           51.9599957600395
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Hauptbahnhof",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.635755538940429,
+          51.956418940646486
+        ]
+      }
     }
   ]
 }
