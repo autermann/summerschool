@@ -4,28 +4,28 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "Johanniter-Gästehaus",
-        "description": "Unterkunft der Teilnehmer/innen"
+        "title": "Unterkunft der Teilnehmer/innen",
+        "description": "Johanniter-Gästehaus<br/>Weißenburgstraße 60 - 64, 48151 Münster"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.619818,
-          51.941558
+          7.6197052001953125,
+          51.94151686397248
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "title": "Alexander-von-Humboldt Haus",
-        "description": "Veranstaltungsort"
+        "title": "Veranstaltungsort",
+        "description": "Alexander-von-Humboldt Haus<br/>Hüfferstraße 61, 48149 Münster"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.604929,
-          51.960112
+          7.604861855506897,
+          51.96004369144851
         ]
       }
     },
@@ -33,13 +33,13 @@
       "type": "Feature",
       "properties": {
         "title": "WWU Münster",
-        "description": "Schlossplatz"
+        "description": "Universität Münster<br/>Schlossplatz 2 48149 Münster"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.613225,
-          51.963737
+          7.613155245780944,
+          51.9635822101229
         ]
       }
     },
@@ -47,13 +47,13 @@
       "type": "Feature",
       "properties": {
         "title": "Institut für Erziehungswissenschaft",
-        "description": "WWU Münster"
+        "description": "Georgskommende 33, 48143 Münster"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          7.620417,
-          51.960025
+          7.620520591735841,
+          51.9599957600395
         ]
       }
     }
